@@ -1,0 +1,59 @@
+<!-- Source: https://dev.to/poulamic/intro-to-creating-css-art-1ep5 -->
+<html lang="en">
+    <head>
+        <title>Panda's Nose</title>
+        <style>
+        * {
+            /* outline: 1px solid greenyellow !important; */
+            /* position: absolute; */
+        }
+
+        body {
+            background: #efffe8;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nose {
+            height: 60px;
+            width: 70px;
+            background: #747474;
+            border-radius: 70%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+
+        .nostrils {
+            display: flex;
+            justify-content: space-around;
+            transform: translateY(30%);
+        }
+
+        .nostril {
+            height: 30px;
+            width: 20px;
+            background: #000000;
+            border-radius: 100%;
+            border-bottom: 1px solid #ffffff;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nose">
+                <div class="nostrils">
+                    <div class="nostril left"></div>
+                    <div class="nostril right"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
