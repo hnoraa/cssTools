@@ -1,0 +1,75 @@
+<html lang="en">
+
+    <head>
+        <title>CSS Art</title>
+        <style>
+        * {
+            /* outline: 1px solid greenyellow !important; */
+            /* position: absolute; */
+        }
+ 
+        .wrapper {
+            margin: 40px auto;
+            max-width: 60em;
+            font-family: Tahoma, sans-serif;
+        }
+ 
+        .wrapper,
+        .shapes {
+            display: flex;
+            justify-content: space-around;
+        }
+ 
+        .wrapper > div {
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .shapes > div {
+            width: 100px;
+           height: 100px;
+            background: orange;
+            margin-right: 4px;
+        }
+ 
+        .example1 {
+            box-shadow: 1px 4px 0.5px brown;
+        }
+ 
+        .example2 {
+            box-shadow:
+                -20px 82px 0 -24px brown,
+                -20px 82px 0 -20px maroon,
+                32px 71px 0 -31px black,
+                40px 102px 0 -40px blue,
+                41px 103px 2px -40px purple,
+                16px 124px 0 -40px purple;
+       }
+ 
+        .example3 {
+            box-shadow: inset -8px -8px gold;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div>
+                <h2>Default</h2>
+                <div class="shapes">
+                    <div class="default"></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Shapes with box shadows</h2>
+                <div class="shapes">
+                    <div class="example1"></div>
+                    <div class="example2"></div>
+                    <div class="example3"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

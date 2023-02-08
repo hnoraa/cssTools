@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+        <title>CSS Art</title>
+        <style>
+        * {
+            outline: 1px solid greenyellow !important;
+            /* position: absolute; */
+        }
+
+        .wrapper {
+            margin: 40px auto;
+            max-width: 60em;
+            font-family: Tahoma, sans-serif;
+        }
+
+        .wrapper,
+        .shapes {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .wrapper>div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .shapes>div {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin-right: 4px;
+        }
+
+        .example1 {}
+
+        .example2 {}
+
+        .example3 {}
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <h2>Default</h2>
+                <div class="shapes">
+                    <div class="default"></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Shapes with box shadows</h2>
+                <div class="shapes">
+                    <div class="example1"></div>
+                    <div class="example2"></div>
+                    <div class="example3"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
